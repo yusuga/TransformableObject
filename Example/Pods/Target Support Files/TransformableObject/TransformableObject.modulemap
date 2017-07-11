@@ -1,0 +1,6 @@
+framework module TransformableObject {
+  umbrella header "TransformableObject-umbrella.h"
+
+  export *
+  module * { export * }
+}

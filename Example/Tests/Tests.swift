@@ -3,47 +3,43 @@
 import Quick
 import Nimble
 import TransformableObject
+import ObjectMapper
+import RealmSwift
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+        describe("transform object") {
+            beforeEach {
+                Realm.Configuration.defaultConfiguration.inMemoryIdentifier = UUID().uuidString
             }
             
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
+            it("struct to realm object") {
+                let obj = Struct(JSON: JSONCreator.json())!
+                let transformedObj = obj.transformToObject()!
+                
+                expect(obj.equalValues(to: transformedObj)).to(beTrue())
+            }
+            
+            it("unmanaged realm object to struct") {
+                let obj = RealmObject(value: JSONCreator.json())
+                let transformedObj = obj.transformToObject()!
+                
+                expect(obj.equalValues(to: transformedObj)).to(beTrue())
+            }
+            
+            it("managed realm object to struct") {
+                let obj = RealmObject(value: JSONCreator.json())
+                
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.add(obj)
                 }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+                
+                realm.beginWrite()
+                let transformedObj = obj.transformToObject()!
+                try! realm.commitWrite()
+                
+                expect(obj.equalValues(to: transformedObj)).to(beTrue())
             }
         }
     }

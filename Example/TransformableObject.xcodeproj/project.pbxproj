@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35F53658A242B584DCF01BAA /* Pods_TransformableObject_Example_TransformableObject_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEA20A0F6090D4F04245D0A /* Pods_TransformableObject_Example_TransformableObject_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B3C372DBDD229B3B156716A6 /* Pods_TransformableObject_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182CD9795ADB03F6DB62325 /* Pods_TransformableObject_Example.framework */; };
+		B8C80B0D1F14FE730074DF5B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C80B0C1F14FE730074DF5B /* Model.swift */; };
+		B8C80B0F1F14FFB10074DF5B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C80B0E1F14FFB10074DF5B /* Util.swift */; };
 		D5B6DAB4D6BAB7DAF05D0318 /* Pods_TransformableObject_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316CB3D397A659033EA12774 /* Pods_TransformableObject_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		096BC7A9B9E12E7D414CE16B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		096BC7A9B9E12E7D414CE16B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		248F423180DF46F4CFC3E13A /* Pods-TransformableObject_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableObject_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableObject_Example/Pods-TransformableObject_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		316CB3D397A659033EA12774 /* Pods_TransformableObject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformableObject_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		346D031FAD63680EBB27417E /* Pods-TransformableObject_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableObject_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableObject_Example/Pods-TransformableObject_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,9 +46,14 @@
 		607FACE51AFB9204008FA782 /* TransformableObject_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformableObject_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		65B1621AF1CB786D1AB96561 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		635470DB35009DDF0AF0F459 /* Pods-TransformableObject_Example-TransformableObject_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableObject_Example-TransformableObject_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableObject_Example-TransformableObject_Tests/Pods-TransformableObject_Example-TransformableObject_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		63A38079219F186F5EC96B60 /* Pods-TransformableObject_Example-TransformableObject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableObject_Example-TransformableObject_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableObject_Example-TransformableObject_Tests/Pods-TransformableObject_Example-TransformableObject_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		65B1621AF1CB786D1AB96561 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7BEA20A0F6090D4F04245D0A /* Pods_TransformableObject_Example_TransformableObject_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformableObject_Example_TransformableObject_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		835EDA02BB3B41999E14C5B9 /* Pods-TransformableObject_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableObject_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableObject_Tests/Pods-TransformableObject_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B487379979A5D3DC63C33E17 /* TransformableObject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TransformableObject.podspec; path = ../TransformableObject.podspec; sourceTree = "<group>"; };
+		B487379979A5D3DC63C33E17 /* TransformableObject.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TransformableObject.podspec; path = ../TransformableObject.podspec; sourceTree = "<group>"; };
+		B8C80B0C1F14FE730074DF5B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B8C80B0E1F14FFB10074DF5B /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		E182CD9795ADB03F6DB62325 /* Pods_TransformableObject_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformableObject_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B6DAB4D6BAB7DAF05D0318 /* Pods_TransformableObject_Tests.framework in Frameworks */,
+				35F53658A242B584DCF01BAA /* Pods_TransformableObject_Example_TransformableObject_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				B8C80B0C1F14FE730074DF5B /* Model.swift */,
+				B8C80B0E1F14FFB10074DF5B /* Util.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -144,6 +155,7 @@
 			children = (
 				E182CD9795ADB03F6DB62325 /* Pods_TransformableObject_Example.framework */,
 				316CB3D397A659033EA12774 /* Pods_TransformableObject_Tests.framework */,
+				7BEA20A0F6090D4F04245D0A /* Pods_TransformableObject_Example_TransformableObject_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +167,8 @@
 				346D031FAD63680EBB27417E /* Pods-TransformableObject_Example.release.xcconfig */,
 				4022E1A7AC1DF511042B5EE1 /* Pods-TransformableObject_Tests.debug.xcconfig */,
 				835EDA02BB3B41999E14C5B9 /* Pods-TransformableObject_Tests.release.xcconfig */,
+				635470DB35009DDF0AF0F459 /* Pods-TransformableObject_Example-TransformableObject_Tests.debug.xcconfig */,
+				63A38079219F186F5EC96B60 /* Pods-TransformableObject_Example-TransformableObject_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -276,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableObject_Tests/Pods-TransformableObject_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableObject_Example-TransformableObject_Tests/Pods-TransformableObject_Example-TransformableObject_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0CC1A53D1BC5A5D4EAA949C5 /* [CP] Embed Pods Frameworks */ = {
@@ -306,7 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableObject_Tests/Pods-TransformableObject_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableObject_Example-TransformableObject_Tests/Pods-TransformableObject_Example-TransformableObject_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5DD63754E9FAA66B0F5BA721 /* [CP] Check Pods Manifest.lock */ = {
@@ -371,6 +385,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				B8C80B0F1F14FFB10074DF5B /* Util.swift in Sources */,
+				B8C80B0D1F14FE730074DF5B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +537,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4022E1A7AC1DF511042B5EE1 /* Pods-TransformableObject_Tests.debug.xcconfig */;
+			baseConfigurationReference = 635470DB35009DDF0AF0F459 /* Pods-TransformableObject_Example-TransformableObject_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -541,7 +557,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 835EDA02BB3B41999E14C5B9 /* Pods-TransformableObject_Tests.release.xcconfig */;
+			baseConfigurationReference = 63A38079219F186F5EC96B60 /* Pods-TransformableObject_Example-TransformableObject_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
