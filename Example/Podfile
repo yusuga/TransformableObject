@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'TransformableObject_Example' do
+  pod 'TransformableObject', :path => '../'
+
+  target 'TransformableObject_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.0.0'
+  pod 'Nimble', '~> 5.1.1'
+  end
+end
