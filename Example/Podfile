@@ -1,10 +1,11 @@
 use_frameworks!
+inhibit_all_warnings!
 
 target 'TransformableObject_Example' do
   pod 'TransformableObject', :path => '../'
 
   target 'TransformableObject_Tests' do
-    pod 'Quick', '~> 1.0.0'
-    pod 'Nimble', '~> 5.1.1'
+    pod 'Quick'
+    pod 'Nimble'
   end
 end
