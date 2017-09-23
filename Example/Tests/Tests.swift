@@ -21,14 +21,14 @@ class TableOfContentsSpec: QuickSpec {
             }
             
             it("unmanaged realm object to struct") {
-                let obj = RealmObject(value: JSONCreator.json())
+                let obj = RealmObject(JSON: JSONCreator.json())!
                 let transformedObj = obj.transformToObject()!
                 
                 expect(obj.equalValues(to: transformedObj)).to(beTrue())
             }
             
             it("managed realm object to struct") {
-                let obj = RealmObject(value: JSONCreator.json())
+                let obj = RealmObject(JSON: JSONCreator.json())!
                 
                 let realm = try! Realm()
                 try! realm.write {

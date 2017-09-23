@@ -59,24 +59,12 @@ class RealmObject: Object, ObjectType {
     dynamic var float: Float = 0
     dynamic var double: Double = 0
     dynamic var string = ""
-    var date: Date {
-        set { _date = newValue }
-        get { return _date }
-    }
-    private dynamic var _date = Date()
-    var data: Data {
-        set { _data = newValue }
-        get { return _data }
-    }
-    dynamic var _data = Data()
+    dynamic var date = Date()
+    dynamic var data = Data()
     
     required convenience init?(map: Map) {
         self.init()
-    }
-    
-    override class func ignoredProperties() -> [String] {
-        return ["date", "data"]
-    }
+    }    
 }
 
 extension RealmObject: TransformableObject {
